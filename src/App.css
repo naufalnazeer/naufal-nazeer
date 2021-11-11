@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0px;
+    padding: 0px ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display:flex;
+    justify-content: space-between;
+    position:sticky ;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(245, 241, 227);
+    align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header .left{
+    width: 50%;
+    align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.header img{
+    margin-left: 38px;
+    width:100px;
+    height: 30px;
 }
+.header .right{
+    /* width: 50%; */
+    align-items: center;
+}
+.header ul{
+    padding-left: 0px;
+    list-style-type: none;
+    display: flex;
+}
+.header ul a{
+    text-decoration: none;
+    color: black;
+    padding:0px 12px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+#contact{
+    color : blue;
+    text-decoration: underline;
+}
+.subHead{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(84, 84, 245);
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+.subHead .subLeft{
+    width: 50%;
+    align-items: center;
+}
+.subLeft h1{
+    margin-left: 38px;
+}
+.subHead .subRight{
+    /* width: 50%; */
+    align-items: center;
+}
+.subHead ul{
+    padding-left: 0px;
+    list-style-type: none;
+    display: flex;
+}
+.subHead ul a{
+    text-decoration:none;
+    color: brown;
+    margin-right: 12px;
+
+}
+.mainBody{
+    /* top:150px; */
+    /* height: 600px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: silver;
+}
+.mainBody .mainLeft{
+    height: 600px;
+    width: 50%;
+    border-bottom: 2px solid rosybrown;
+    border-right: 3px dashed rosybrown;
+    padding: 38px ;
+}
+.mainBody .mainLeft .info{
+    padding-bottom: 25px ;
+   
+    
+}
+.mainBody .mainLeft .location{
+    display: flex;
+    align-items: center;
+}
+.mainBody .mainLeft .location p{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.mainBody .mainLeft .email{
+    display: flex;
+    align-items: center;
+}
+.mainBody .mainLeft .email p{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.mainBody .mainLeft .phone{
+    display: flex;
+    align-items: center;
+}
+.mainBody .mainLeft .phone p{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.mainBody .mainLeft .phone img{
+    padding-top: 15px;
+}
+.mainBody .mainLeft .email img{
+    padding-top: 15px;
+}
+.mainBody .mainLeft .location img{
+    padding-top: 15px;
+}
+.mainBody .mainRight{
+    height: 600px;
+    border-bottom: 2px solid rosybrown;
+    padding: 38px;
+    width: 50%;
+}
+.mainBody .mainRight td{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+.mainBody .mainRight input{
+    width: 200px;
+    height: 2em;
+    border-color: transparent;
+    outline-color: sienna;
+}
+.mainBody .mainRight .webSite{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.footer{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding-left: 38px;
+}
+.footer h1{
+    font-weight: 300;
+    font-size:small;
 }
